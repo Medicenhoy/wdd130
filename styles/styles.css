@@ -6,8 +6,8 @@ aside{
     margin: 1em;
     border: 1px solid rgba(0, 0, 0, 0, 2);
     padding: 1em;
-    background-color: #eee;
-    color: #333;
+    background-color: rgb(229, 220, 220);
+    color: rgb(79,79, 79);
     text-align: center;
 }
 
