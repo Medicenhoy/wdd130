@@ -1,0 +1,117 @@
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #5C5567   ;
+    --secondary-color: #DD3D4F ;
+    --accent1-color: #E1C7BB;
+    --accent2-color: #A090A2;
+    --heading-font: "Fjalla One";
+    --paragraph-font: "HeBungee-Inline", lvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #313131;  /* headlines on a white background */ 
+    --headline-color-on-color: white; /* headlines on a colored background 
+    --paragraph-color-on-white: #ffffff; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: rgb(0, 0, 0); 
+    --paragraph-background-color: #8fb996  ;
+    --nav-link-color: #8fb996;
+    --nav-background-color: #a1cca5;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #8fb996;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+  body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: #000000;
+    font-family: 'Bungee Inline';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/bungeeinline/v11/Gg8zN58UcgnlCweMrih332VuPGt_-WEg.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  h2 {
+    text-align: center;
+  }
+  hr {
+    height: 3px;
+    margin: 35px 0;
+    background: rgb(225, 199, 187);
+  }
+  header {
+    padding: 1em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: #8fb996;
+  }
+  header > h1, header > h2 {
+    color: #313131;
+  }
+  p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
+    padding: 1em;
+  }
+  .colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .colors th {
+    background-color: #999;
+  }
+  .colors td{
+    width: 25%;
+    height: 3em;
+  }
+  .primary {
+    background-color: rgb(92, 85, 103);
+  }
+  .secondary {
+    background-color: rgb(221, 61, 79);
+  }
+  .accent1 {
+    background-color: rgb(225, 199, 187);
+  }
+  .accent2{
+    background-color: rgb(160, 144, 162);
+  }
+  p.colored {
+    background-color: rgb(225, 199, 187);
+    color: rgb(92, 85, 103);
+  }
+  nav {
+    background-color: rgb(92, 85, 103);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  nav  {
+    list-style-type: none;
+    display: flex;
+  }
+  nav a {
+    padding:1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+  }
+  nav a:link, nav a:visited {
+    color: rgb(230, 250, 236);
+  }
+  nav a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(85, 85, 85);
+  }
