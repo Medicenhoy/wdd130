@@ -1,5 +1,4 @@
 :root {
-    /* change the values below to your colors from your palette */
     --primary-color: #5C5567   ;
     --secondary-color: #DD3D4F ;
     --accent1-color: #E1C7BB;
@@ -7,15 +6,14 @@
     --heading-font: "Fjalla One";
     --paragraph-font: "HeBungee-Inline", lvetica, sans-serif;
   
-    /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #313131;  /* headlines on a white background */ 
-    --headline-color-on-color: white; /* headlines on a colored background 
-    --paragraph-color-on-white: #ffffff; /* paragraph text on a white background */ 
+    --headline-color-on-white: #313131;  
+    --headline-color-on-color: white;
+   
     --paragraph-color-on-color: rgb(0, 0, 0); 
     --paragraph-background-color: #8fb996  ;
     --nav-link-color: #8fb996;
     --nav-background-color: #a1cca5;
-    --nav-hover-link-color: white;
+    --nav-hover-link-color: rgb(221, 61, 79);
     --nav-hover-background-color: #8fb996;
   }
   
@@ -23,8 +21,9 @@
   @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
   body {
     max-width: 960px;
+    font-family: "HeBungee-Inline";
     margin: 0 auto;
-    padding: 4em;
+    padding: 20px ;
     font-size: 18px;
     text-align: center;
   }
@@ -35,7 +34,7 @@
   }
   h1, h2, h3, h4, h5, h6 {
     color: #000000;
-    font-family: 'Bungee Inline';
+    font-family: "Fjalla One";
     font-style: normal;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/bungeeinline/v11/Gg8zN58UcgnlCweMrih332VuPGt_-WEg.woff2) format('woff2');
@@ -49,9 +48,7 @@
     background: rgb(225, 199, 187);
   }
   header {
-    padding: 1em;
-    text-align: center;
-    color: rgb(0, 0, 0);
+    padding: 20px;
     background-color: #8fb996;
   }
   header > h1, header > h2 {
@@ -60,7 +57,7 @@
   p {
     font-family: "HeBungee-Inline";
     color: #000000;
-    padding: 1em;
+    padding: 25px;
   }
   .colors {
     width: 100%;
@@ -95,20 +92,21 @@
     background-color: rgb(92, 85, 103);
     line-height: 3em;
     text-align: center;
-    font-size: 1.2em;
-  }
-  nav  {
-    list-style-type: none;
+    font-size: 1.2rem;
     display: flex;
+    list-style-type: none;
   }
+
   nav a {
-    padding:1em;
+    display: block;
+    color:rgb(221, 61, 79);
+    padding:1rem;
     min-width: 120px;
     text-decoration: none;
     padding: 10px;
   }
   nav a:link, nav a:visited {
-    color: rgb(230, 250, 236);
+    color: rgb(221, 61, 79);
   }
   nav a:hover {
     color: rgb(255, 255, 255);
