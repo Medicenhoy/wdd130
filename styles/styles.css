@@ -9,15 +9,28 @@ aside{
     background-color: rgb(229, 220, 220);
     color: rgb(79,79, 79);
     text-align: center;
+    width: 20em;
 }
 
 aside image{
     width: 200px;
     height: auto;
 }
+
+aside h2{
+    position: absolute;
+    top: 200px;
+    left: 5px;
+    background-size: 1em;
+    background-color: antiquewhite;
+    
+}
+
 main img{
     width: 150;
     height: auto;
+    float: right;
+    margin-inline: 1em;
 }
 
 p{
@@ -28,4 +41,15 @@ footer{
     margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Class selector*/
+.box{
+    margin: 1rem;
+    border: 1px solid rgba(82, 82, 214, 0.1);
 }
