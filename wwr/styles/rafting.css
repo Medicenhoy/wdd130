@@ -20,36 +20,87 @@
     --nav-hover-link-color: rgb(221, 61, 79);
     --nav-hover-background-color: #8fb996;
   }
-
-
+ body{
+    background-color: rgb(148, 35, 35);
+ }
 header nav{
-    position: inherit;
-    color:rgb(221, 61, 79);
+    justify-content: right;
+    display: flex;
+    position: right;
     margin: auto;
+    justify-content:space-around;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    padding: 1.5rem;
+}
+
+nav a{
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 1rem;
 }
 
 header img{
     display: flex;
-    float: right;
-    position: relative;
-    margin:auto;
-    max-width: 200px;
+    float: left;
+    justify-content: start;
+    max-width: 107px;
+    background-color: rgb(2,0,36);
+}
+
+h1{
+    text-align: center;
+    padding: 1rem;
 }
 
 h1, h2{
     color: #DD3D4F;
+    background-color: #b9b9b9;
+    width: 100%;
 }
 
 p{
-    color: #5C5567;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Fjalla One';
+    text-align: justify;
+    
 }
 
-.hero img {
-    display: block;
-    width: 100%;
+.hero-image {
+    display:flex;
+    width: 60%;
     height: auto;
+    margin: auto;
+  }
+
+
+  .imagen-rafting{
+   max-block-size: 10%;
+   align-content: flex-start; ;
   }
 
 article{
     position: relative;
+}
+
+.a01{
+    background-color: #fff;
+}
+footer p{
+    float: right;
+    color: #313131;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+    z-index: -1;
+    height: 10px;
+}
+footer img{
+    width: 40px;
+    justify-content:space-around;
+    padding: 0.7rem;
 }
