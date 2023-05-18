@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML Form - User Poll</title>
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form action="action_page.php"> <!--For reference only-->
+            <fieldset>
+                <legend>Contact information</legend>
+                <label for="fullname">Full name:<input type="text" id="fullname" name="fullname" required></label><br>
+                <label for="email">Email:<input type="email" id="email" name="email" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <label for="browser">What is your favorite browser?
+                    <select id="browser" name="browser" required>
+                        <option value="" >Chosee one...</option>
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+                <label for="pet">Do you have a household pet?<input type="checkbox" id="pet" name="pet"></label><br>
+                <label for="feedback">List the places you have lived:<br><textarea id="feedback" name="feedback" rows="4" placeholder="stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"></textarea></label>
+
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2024 | HTML Form - User Poll Activity | Eloy Martinez</p>
+    </footer>
+    
+</body>
+</html>
