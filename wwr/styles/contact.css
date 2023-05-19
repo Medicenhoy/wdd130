@@ -25,7 +25,7 @@
  }
 header nav{
     justify-content: right;
-    display: block;
+    display: flex;
     position: right;
     margin: auto;
     justify-content:space-around;
