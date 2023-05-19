@@ -21,7 +21,7 @@
     --nav-hover-background-color: #8fb996;
   }
  body{
-    background-color: rgb(148, 35, 35);
+    background-color: rgba(253, 253, 253, 0.616);
  }
 header nav{
     justify-content: right;
@@ -41,7 +41,7 @@ nav a{
     font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 header img{
@@ -50,18 +50,19 @@ header img{
     justify-content: start;
     max-width: 107px;
     background-color: rgb(2,0,36);
+    padding: 0.55rem
 }
 
 
 h1{
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 h1, h2, h3{
     color: #DD3D4F;
     background-color: #b9b9b9;
-    width: 100%;
+    padding: 1.5rem;
 }
 
 p{
@@ -69,9 +70,12 @@ p{
     font-size: 1rem;
     font-family: 'Fjalla One';
     text-align: justify;
+    padding: 1.5rem
     
 }
-
+.map{
+    padding: 1.5rem
+}
 .avatar {
     vertical-align: middle;
     width: 100px;
@@ -81,7 +85,6 @@ p{
     justify-content: space-between;
     margin: 5px;
     margin-bottom: 15px;
-
   }
 
 .avatar-box{
@@ -103,8 +106,24 @@ p{
 
 }
 
-article{
-    position: relative;
+fieldset{
+    display: flex;
+    padding: 1.5rem;
+    margin: auto;
+    flex-direction: column;
+    align-content: center;
+    background-color: #474747c7;
+    text-align: center;
+    width: auto;
+    margin: 0em 12em auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 0em 12em auto;
 }
 
 .a01{
@@ -119,5 +138,5 @@ footer p{
 footer img{
     width: 40px;
     justify-content:space-around;
-    padding: 0.7rem;
+    padding: 1.5rem;
 }
