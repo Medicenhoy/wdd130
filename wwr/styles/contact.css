@@ -21,7 +21,7 @@
     --nav-hover-background-color: #8fb996;
   }
  body{
-    background-color: rgba(253, 253, 253, 0.616);
+    background-color: rgba(41, 40, 40, 0.726);
  }
 header nav{
     justify-content: right;
@@ -50,7 +50,7 @@ header img{
     justify-content: start;
     max-width: 107px;
     background-color: rgb(2,0,36);
-    padding: 0.55rem
+    padding: 0.49rem
 }
 
 
@@ -115,16 +115,35 @@ fieldset{
     background-color: #474747c7;
     text-align: center;
     width: auto;
-    margin: 0em 12em auto;
+    margin: auto;
 }
 
+label{
+    margin: 0.6rem;
+}
 form{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: auto;
-    margin: 0em 12em auto;
+    width: 600px;
+    margin: auto
+    
 }
+
+input[type="checkbox"]{
+    padding: 2rem;
+}
+
+form button {
+    display: block;
+    cursor: pointer;
+    padding: 0.5em 3em;
+    border: none;
+    border-radius: 5px;
+    background: rgba(224, 38, 38, 0.479);
+    margin: 4px 0;
+
+  }
 
 .a01{
     background-color: #fff;
