@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
+:root {
+    --primary-color: #5C5567   ;
+    --secondary-color: #DD3D4F ;
+    --accent1-color: #E1C7BB;
+    --accent2-color: #A090A2;
+    --heading-font: "Fjalla One";
+    --paragraph-font: "HeBungee-Inline", lvetica, sans-serif;
+  
+    --headline-color-on-white: #313131;  
+    --headline-color-on-color: white;
+   
+    --paragraph-color-on-color: rgb(0, 0, 0); 
+    --paragraph-background-color: #8fb996  ;
+    --nav-link-color: #8fb996;
+    --nav-background-color: #a1cca5;
+    --nav-hover-link-color: rgb(221, 61, 79);
+    --nav-hover-background-color: #8fb996;
+  }
  body{
     background-color: rgba(41, 40, 40, 0.726);
  }
