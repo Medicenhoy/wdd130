@@ -1,20 +1,8 @@
 :root {
-    --primary-color: #5C5567   ;
-    --secondary-color: #DD3D4F ;
-    --accent1-color: #E1C7BB;
-    --accent2-color: #A090A2;
-    --heading-font: "Fjalla One";
-    --paragraph-font: "HeBungee-Inline", lvetica, sans-serif;
-  
-    --headline-color-on-white: #313131;  
-    --headline-color-on-color: white;
-   
-    --paragraph-color-on-color: rgb(0, 0, 0); 
-    --paragraph-background-color: #8fb996  ;
-    --nav-link-color: #8fb996;
-    --nav-background-color: #a1cca5;
-    --nav-hover-link-color: rgb(221, 61, 79);
-    --nav-hover-background-color: #8fb996;
+    --primary-color: #CCD5AE   ;
+    --secondary-color: #FEFAE0 ;
+    --accent1-color: #FAEDCD;
+    --accent2-color: #D4A373;
   }
   
   @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
@@ -32,13 +20,12 @@
     margin: 0 auto;
     max-width: 300px;
   }
+
   h1, h2, h3, h4, h5, h6 {
     color: #000000;
     font-family: "Fjalla One";
-    font-style: normal;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/bungeeinline/v11/Gg8zN58UcgnlCweMrih332VuPGt_-WEg.woff2) format('woff2');
   }
+
   h2 {
     text-align: center;
   }
@@ -73,25 +60,23 @@
     height: 3em;
   }
   .primary {
-    background-color: rgb(92, 85, 103);
+    background-color: #CCD5AE;
   }
   .secondary {
-    background-color: rgb(221, 61, 79);
+    background-color: #FEFAE0;
   }
   .accent1 {
-    background-color: rgb(225, 199, 187);
+    background-color: #FAEDCD;
   }
   .accent2{
-    background-color: rgb(160, 144, 162);
+    background-color: #D4A373;
   }
-  p.colored {
-    background-color: rgb(225, 199, 187);
-    color: rgb(92, 85, 103);
-  }
+ 
   nav {
-    background-color: rgb(92, 85, 103);
+    background-color: #CCD5AE;
     line-height: 3em;
     text-align: center;
+    justify-content: flex-end;
     font-size: 1.2rem;
     display: flex;
     list-style-type: none;
@@ -99,16 +84,31 @@
 
   nav a {
     display: block;
-    color:rgb(221, 61, 79);
+    color:#000000;
     padding:1rem;
     min-width: 120px;
     text-decoration: none;
     padding: 10px;
   }
   nav a:link, nav a:visited {
-    color: rgb(221, 61, 79);
+    color: #000000;
   }
   nav a:hover {
     color: rgb(255, 255, 255);
-    background-color: rgb(85, 85, 85);
+    background-color: #959e79;
+    border-radius: 50%;
   }
+
+  footer p{
+    float: right;
+    color: #313131;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+    z-index: -1;
+    height: 10px;
+}
+footer img{
+    width: 40px;
+    justify-content:space-around;
+    padding: 0.7rem;
+}

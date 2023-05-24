@@ -1,5 +1,15 @@
- body{
-    background-color: rgba(41, 40, 40, 0.726);
+:root {
+    --primary-color: #CCD5AE   ;
+    --secondary-color: #FEFAE0 ;
+    --accent1-color: #FAEDCD;
+    --accent2-color: #D4A373;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+body{
+    background-color: #FEFAE0;
  }
 header nav{
     justify-content: right;
@@ -7,14 +17,12 @@ header nav{
     position: right;
     margin: auto;
     justify-content:space-around;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: #CCD5AE;
     padding: 1.5rem;
 }
 
 nav a{
     display: flex;
-    padding: 0.5rem;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 700;
@@ -22,12 +30,21 @@ nav a{
     padding: 1.5rem;
 }
 
+nav a:link, nav a:visited {
+    color: #000000;
+  }
+  nav a:hover {
+    color: rgb(255, 255, 255);
+    background-color: #959e79;
+    border-radius: 50%;
+  }
+
 header img{
     display: flex;
     float: left;
     justify-content: start;
     max-width: 107px;
-    background-color: rgb(2,0,36);
+    background-color: #CCD5AE;
     padding: 0.49rem
 }
 
@@ -38,13 +55,14 @@ h1{
 }
 
 h1, h2, h3{
-    color: #DD3D4F;
-    background-color: #b9b9b9;
+    color: #313131;
+    background-color: #FAEDCD;
     padding: 1.5rem;
+    font-family: "Fjalla One"
 }
 
 p{
-    color: white;
+    color: #313131;
     font-size: 1rem;
     font-family: 'Fjalla One';
     text-align: justify;
@@ -78,7 +96,7 @@ p{
     top: 5em;
     right: 5em;
     justify-content: space-around;
-    color: #fff;
+    color: #313131;
     align-items: flex-start;
     padding: 10px;
 
@@ -92,7 +110,7 @@ fieldset{
     display: flex;
     padding: 1.5rem;
     margin: auto;
-    background-color: #474747c7;
+    background-color: #FAEDCD;
     text-align: center;
     width: auto;
     margin: auto;
@@ -101,15 +119,16 @@ fieldset{
 label{
     margin: 0.6rem;
 }
+
+.purpose{
+    background-color: #FEFAE0;
+}
 form{
     display: flex;
     flex-direction: column;
-
     width: 600px;
-    margin: auto
-    
+    margin: auto;
 }
-
 
 
 form button {
@@ -123,15 +142,22 @@ form button {
 
   }
 
+
+button:hover{
+    background-color: #c41a1a91;
+  }
+
 .a01{
-    background-color: #fff;
+    background-color: #D4A373;
 }
+
 footer p{
     float: right;
     color: #313131;
     padding-right: 1rem;
     height: 10px;
 }
+
 footer img{
     width: 40px;
     justify-content:space-around;
