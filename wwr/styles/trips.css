@@ -1,12 +1,13 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"); 
+
 :root {
     --primary-color: #CCD5AE   ;
     --secondary-color: #FEFAE0 ;
     --accent1-color: #FAEDCD;
     --accent2-color: #D4A373;
-  }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+}
 
 body{
     background-color: #FEFAE0;
@@ -14,7 +15,6 @@ body{
 header nav{
     justify-content: right;
     display: flex;
-    position: right;
     margin: auto;
     justify-content:space-around;
     background: #CCD5AE;
@@ -62,6 +62,7 @@ h1, h2, h3{
 }
 
 p{
+    display: flex;
     color: #313131;
     font-size: 1rem;
     font-family: 'Fjalla One';
@@ -75,7 +76,6 @@ main{
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    margin-bottom: none;
 }
 
 .portal-01{
@@ -99,17 +99,18 @@ main{
 
 .portal-02{
     display: flex;
-    margin-top: none;
+    flex-direction: column;
 }
 
 .galeria{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+    flex-direction: row;
 }
 
-#galeria-01{
+.galeria-01{
     width: 180px;
     height: 150px;
     padding: 0.5rem;
@@ -130,6 +131,37 @@ figcaption{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.box01{
+    opacity: 0.35;
+    display: flex;
+    box-shadow: 0px -1px 1px 0px;
+    border-radius: 40%;
+    justify-content: center;
+}
+
+.box-03{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: xx-large;
+    font-family: 'Fjalla One';
+    position: relative;
+    bottom: 15rem;
+    padding-bottom: 1px;
+    text-align: center;
+}
+
+#box02{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    border: 30px rgba(255, 255, 255, 0.205);
+    border-radius: 80%;
+    box-shadow: 0 0 30px #959e79;  
 }
 
 button{
