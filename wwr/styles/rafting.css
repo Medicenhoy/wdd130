@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
 :root {
     --primary-color: #CCD5AE   ;
     --secondary-color: #FEFAE0 ;
@@ -5,8 +9,6 @@
     --accent2-color: #D4A373;
   }
   
-  @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 body{
     background-color: #FEFAE0;
