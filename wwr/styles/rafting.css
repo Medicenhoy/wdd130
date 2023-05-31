@@ -21,6 +21,7 @@ header nav{
     justify-content:space-around;
     background: #CCD5AE;
     padding: 1.5rem;
+    grid-template-rows: auto;
 }
 
 nav a{
