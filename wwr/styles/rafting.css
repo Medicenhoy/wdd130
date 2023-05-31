@@ -1,3 +1,8 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
 :root {
     --primary-color: #CCD5AE   ;
     --secondary-color: #FEFAE0 ;
@@ -5,8 +10,6 @@
     --accent2-color: #D4A373;
   }
   
-  @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 body{
     background-color: #FEFAE0;
@@ -14,11 +17,11 @@ body{
 header nav{
     justify-content: right;
     display: flex;
-    position: right;
     margin: auto;
     justify-content:space-around;
     background: #CCD5AE;
     padding: 1.5rem;
+    grid-template-rows: auto;
 }
 
 nav a{
