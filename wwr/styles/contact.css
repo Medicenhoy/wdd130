@@ -16,7 +16,6 @@ body{
 header nav{
     justify-content: right;
     display: flex;
-    position: right;
     margin: auto;
     justify-content:space-around;
     background: #CCD5AE;
