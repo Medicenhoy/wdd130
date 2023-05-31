@@ -109,10 +109,12 @@ p{
     padding: 10px;
 
 }
+
 .a02{
     display: flex;
     flex-direction: row;
 }
+
 
 fieldset{
     display: flex;
@@ -131,6 +133,7 @@ label{
 .purpose{
     background-color: #FEFAE0;
 }
+
 form{
     display: flex;
     flex-direction: column;
