@@ -61,6 +61,13 @@ h1, h2, h3{
     font-family: "Fjalla One"
 }
 
+.purpose{
+        color: #313131;
+    background-color: #FAEDCD;
+    padding: 1.5rem;
+    font-family: "Fjalla One"
+}
+
 p{
     color: #313131;
     font-size: 1rem;
