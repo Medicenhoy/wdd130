@@ -1,0 +1,95 @@
+/* CSS Variables (Root) */
+:root {
+  --primary-color: #2A628F; 
+  --secondary-color: #A98743; 
+  --accent1-color: #1D263B;
+  --accent2-color: #F4F7F5; 
+  
+  --heading-font: 'Georgia', serif;
+  --body-font: 'Arial', Helvetica, sans-serif;
+}
+
+/* Universal Selector Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+/* Page width limit and centering */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* Heading styling */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Basic margin and padding */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* Footer social media links */
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px; 
+    height: auto;
+    margin: 10px; 
+}
+
+/* Hero section styling */
+.hero {
+  position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+/* Hero H1 (This overrides par/ts of the h1,h2 rule as per instructions) */
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff; 
+}
+
+/* Hero article */
+article {
+  position: absolute;
+  top: 90px; 
+  width: 90%; 
+  margin: 0 5%; 
+  padding: 10px;
+  background-color: rgba(244, 247, 245, 0.85); 
+  border-radius: 5px;
+}
+
+/* Image inside the hero article */
+.hero article img {
+  float: right;
+  width: 125px;
+  margin: 0 0 10px 10px; 
+  border: 1px solid var(--primary-color);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
