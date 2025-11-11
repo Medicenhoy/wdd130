@@ -1,49 +1,125 @@
+/* Universal Selector Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Layout container using Flexbox for two columns (main content and aside) */
 main {
     max-width: 840px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    margin: 20px auto; 
+    padding: 20px;
+}
+
+/* Container for the left column (h1, p, ul) */
+.main-content {
+    flex: 3; 
+    min-width: 400px; 
 }
 
 nav {
     background-color: #333;
     padding: 10px;
+    display: flex; 
+    justify-content: flex-start; 
 }
 
 nav a {
     color: white; 
-    padding: 5px;
+    padding: 5px 15px; 
     display: block;
+    text-decoration: none; 
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
 }
 
 h1 {
     color: #000;
+    border-bottom: 2px solid #ccc; 
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
+/* removed box model properties handled by .box, added position: relative */
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    background-color: #eee;
-    color: #333;
+    width: 20rem; 
+    flex: 1; 
     text-align: center;
-    padding: 1rem;
+    /* Set position to relative for absolute children */
+    position: relative; 
 }
 
-aside img {
-    width: 200px;
-    height: auto;
-}
-
+/*  Float the profile image to the right */
 main img {
     width: 150px;
     height: auto;
     border: 1px solid #ccc;
     padding: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    float: right; 
+    margin: 0 0 10px 15px; 
 }
 
-p { padding: 0;}
+/* Style for the Caracas image inside the aside */
+aside img {
+    width: 200px;
+    height: auto;
+    display: block; 
+    margin: 0 auto;
+}
+
+p { 
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-position: inside; 
+}
+
+/* Absolute position the heading over the image in aside */
+aside h2 {
+    position: absolute;
+    top: 10px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
 
 footer {
-    margin-top: 15px;
+    margin-top: 20px;
     border-top: 1px solid #000;
     text-align: center;
+    padding: 10px 0;
+    background-color: #333; 
+    color: white; 
+}
+
+/* Class Selectors */
+
+/*the .box selector */
+.box {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
 }
