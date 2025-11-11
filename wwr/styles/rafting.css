@@ -1,3 +1,10 @@
+/* Universal Selector Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* CSS Variables (Root) */
 :root {
   --primary-color: #2A628F; 
@@ -9,12 +16,7 @@
   --body-font: 'Arial', Helvetica, sans-serif;
 }
 
-/* Universal Selector Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 /* Body styling */
 body {
