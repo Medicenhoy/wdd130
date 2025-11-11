@@ -28,6 +28,43 @@ header, main, footer {
   margin: 0 auto;
 }
 
+/* Header and Navigation styling */
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+header nav {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    margin: 0 15px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+header nav a:hover {
+    color: var(--accent1-color);
+    text-decoration: underline;
+}
+
 /* Heading styling */
 h1, h2 {
   font-family: var(--heading-font);
@@ -35,7 +72,7 @@ h1, h2 {
 }
 
 /* Basic margin and padding */
-nav, p, section, article {
+p, section {
   margin: 16px;
   padding: 8px;
 }
@@ -62,8 +99,7 @@ nav, p, section, article {
     height: auto;
   }
 
-/* Hero H1 (This overrides par/ts of the h1,h2 rule as per instructions) */
-h1 {
+.hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
@@ -74,18 +110,17 @@ h1 {
   color: #fff; 
 }
 
-/* Hero article */
-article {
+.hero article {
   position: absolute;
   top: 90px; 
   width: 90%; 
   margin: 0 5%; 
   padding: 10px;
-  background-color: rgba(244, 247, 245, 0.85); 
+  background-color: var(--accent2-color);
+  opacity: 0.85; 
   border-radius: 5px;
 }
 
-/* Image inside the hero article */
 .hero article img {
   float: right;
   width: 125px;
