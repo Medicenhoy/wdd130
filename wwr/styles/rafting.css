@@ -1,91 +1,181 @@
 /* Universal Selector Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* CSS Variables (Root) */
 :root {
-  --primary-color: #2A628F; 
-  /* --secondary-color: #A98743; */
-  --accent1-color: #1D263B;
-  --accent2-color: #F4F7F5; 
-  
-  --heading-font: 'Georgia', serif;
-  --body-font: 'Arial', Helvetica, sans-serif;
+    --primary-color: #2A628F;
+    --accent1-color: #1D263B;
+    --accent2-color: #F4F7F5;
+
+    --heading-font: 'Georgia', serif;
+    --body-font: 'Arial', Helvetica, sans-serif;
 }
-
-
 
 /* Body styling */
 body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
+    font-family: var(--body-font);
+    color: var(--accent1-color);
 }
-
 
 header, main, footer {
-  width: 840px;
-  margin: 0 auto;
+    width: 840px;
+    margin: 0 auto;
 }
-
 
 h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+/* --- HEADER & NAV LAYOUT 18112025 --- */
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
 }
 
+header img {
+    max-width: 150px;
+    height: auto;
+}
 
-.socialmedia a {
+nav {
+    margin: 0; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end; 
+    list-style-type: none;
+    gap: 30px;
+}
+
+nav a {
     text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
+nav a:hover {
+    color: var(--accent1-color);
+}
 
-
+/* --- HERO SECTION --- */
 .hero {
-  position: relative;
+    position: relative;
+    margin-bottom: 40px;
 }
 
-.hero img {
+.hero > img { 
     display: block;
     width: 100%;
     height: auto;
-  }
+}
 
 .hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff; 
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
 }
 
 .hero article {
-  position: absolute;
-  top: 90px; 
-  width: 90%; 
-  margin: 0 5%; 
-  padding: 10px;
-  background-color: var(--accent2-color);
-  opacity: 0.85; 
-  border-radius: 5px;
-  margin-top: 0; 
-  margin-bottom: 0;
+    position: absolute;
+    top: 90px;
+    width: 80%;
+    left: 10%; 
+    padding: 20px;
+    background-color: var(--accent2-color);
+    opacity: 0.9;
+    border-radius: 5px;
 }
 
 .hero article img {
-  float: right;
-  width: 125px;
-  margin: 0 0 10px 10px; 
-  border: 1px solid var(--primary-color);
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    float: right;
+    width: 125px;
+    margin: 0 0 10px 10px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* --- HISTORY SECTION --- */
+.history {
+    margin: 20px 0;
+    padding: 0 16px;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr; 
+    gap: 20px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.history-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* --- ADVENTURES SECTION --- */
+.adventure {
+    margin: 40px 0;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.adventure-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+figure {
+    margin: 0;
+    width: 18%;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+figcaption {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: var(--primary-color);
+}
+
+/* --- FOOTER  --- */
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 16px;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
