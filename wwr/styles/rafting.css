@@ -1,11 +1,9 @@
-/* Universal Selector Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* CSS Variables (Root) */
 :root {
     --primary-color: #2A628F;
     --accent1-color: #1D263B;
@@ -15,7 +13,6 @@
     --body-font: 'Arial', Helvetica, sans-serif;
 }
 
-/* Body styling */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
@@ -31,7 +28,6 @@ h1, h2 {
     color: var(--primary-color);
 }
 
-/* --- HEADER & NAV LAYOUT 18112025 --- */
 
 header {
     display: grid;
@@ -67,7 +63,6 @@ nav a:hover {
     color: var(--accent1-color);
 }
 
-/* --- HERO SECTION --- */
 .hero {
     position: relative;
     margin-bottom: 40px;
@@ -109,7 +104,6 @@ nav a:hover {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* --- HISTORY SECTION --- */
 .history {
     margin: 20px 0;
     padding: 0 16px;
@@ -129,7 +123,6 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* --- ADVENTURES SECTION --- */
 .adventure {
     margin: 40px 0;
     padding: 0 16px;
@@ -160,7 +153,6 @@ figcaption {
     color: var(--primary-color);
 }
 
-/* --- FOOTER  --- */
 footer {
     display: flex;
     justify-content: space-between; 
@@ -180,7 +172,6 @@ footer {
     text-decoration: none;
 }
 
-/* --- CONTACT PAGE STYLES --- */
 
 .company-info {
     text-align: center;
@@ -251,10 +242,26 @@ footer {
     color: var(--primary-color);
 }
 
-.radio-group label {
-    display: block;
-    margin-bottom: 5px;
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+}
+
+.radio-option input[type="radio"] {
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.radio-option label {
+    margin-bottom: 0;
     font-weight: normal;
+    cursor: pointer;
 }
 
 .checkbox-container {

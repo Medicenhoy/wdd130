@@ -59,9 +59,20 @@
                 <fieldset>
                     <legend>Message Purpose</legend>
                     <div class="radio-group">
-                        <label><input type="radio" name="purpose" value="general" checked> General Inquiry</label>
-                        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                        <div class="radio-option">
+                            <input type="radio" id="purpose-general" name="purpose" value="general" checked>
+                            <label for="purpose-general">General Inquiry</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                            <label for="purpose-reservation">Reservation Question</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+                            <label for="purpose-suggestion">Website Suggestion</label>
+                        </div>
                     </div>
                 </fieldset>
 
