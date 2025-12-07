@@ -1,24 +1,21 @@
-/* Universal Selector Reset */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base Styles */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
-/* Layout container rule */
-header, .grid, footer {
+header, .grid, footer{
   max-width: 840px;
   margin: 0 auto;
 }
 
-/* Navigation Styles */
-nav {
+nav{
   background-color: steelblue;
   padding: 1rem;
   display: flex;
@@ -59,16 +56,14 @@ aside {
   text-align: center;
 }
 
-/* Content Styles */
-h1 {
+h1{
     color: #000;
     border-bottom: 2px solid #ccc; 
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-/* Float the profile image to the right */
-main img {
+main img{
     width: 150px;
     height: auto;
     border: 1px solid #ccc;
@@ -78,8 +73,7 @@ main img {
     margin: 0 0 10px 15px; 
 }
 
-/* Style for the Caracas image inside the aside */
-aside img {
+aside img{
     width: 200px;
     height: auto;
     display: block; 
@@ -95,8 +89,7 @@ ul {
     list-style-position: inside; 
 }
 
-/* Absolute position the heading over the image in aside */
-aside h2 {
+aside h2{
     position: absolute;
     top: 0px;
     left: 50%; 
@@ -118,8 +111,7 @@ footer {
     color: white; 
 }
 
-/* Class Selectors */
-.box{
+.box {
   margin: 1rem;
   border: 1px solid rgb(0 0 0 / 10%);
   padding: 1rem;
